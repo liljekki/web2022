@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+* {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 800px;
+    margin: 0;
+    padding: 0;
+}
+
+.top_info, .container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+    align-items: center;
+}
+
+.left_column {
+    flex: 1 2 200px;
+    max-height: 252px;
+}
+.right_column {
+    padding: 5%;
+    max-height: 252px;
+    flex: 3 1 600px;
+}
+.left_column2{
+    padding: 3% 5% 20% 4%;
+    margin-top: 0%;
+    flex: 1 2 200px;
+}
+.right_column2{
+    padding: 1% 5% 6% 5%;
+    flex: 3 1 600px;
+}
+
+.gray_back{
+    background-color: rgb(211, 211, 211);
+}
+
+#phone_email_git{
+    padding: 3%;
+}
+h3{
+    font-weight: 600;
+}
+.hide{
+    margin: 3% 0% 10% 9%;
+}
+.end_text{
+    font-size: 80%;
+    text-align: end;
+}
+.otstup{
+    padding: 1% 0% 4% 0%;
+}
+
+.position{
+    position: relative;
+}
+
+.about{
+    position:absolute;
+    top: 209px;
+    padding: 0% 547px 0% 3%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.650);
+    white-space:nowrap;
+    word-spacing: 5px;
+}
