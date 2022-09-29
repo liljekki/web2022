@@ -15,9 +15,11 @@
 
 .left_column {
     flex: 1 2 200px;
+    max-height: 252px;
 }
 .right_column {
     padding: 5%;
+    max-height: 252px;
     flex: 3 1 600px;
 }
 .left_column2{
@@ -57,8 +59,8 @@ h3{
 
 .about{
     position:absolute;
-    top: 200px;
-    padding: 0% 69% 0% 3%;
+    top: 209px;
+    padding: 0% 547px 0% 3%;
     color: white;
     background-color: rgba(0, 0, 0, 0.650);
     white-space:nowrap;
