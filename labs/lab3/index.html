@@ -71,7 +71,7 @@
                 <img src="/labs/lab3/img/photo1.jpg" alt="">
                 <h3>Razer</h3>
                 <div class="content">
-                    <span>$25</span>
+                    <span>$15</span>
                     <a href="#">Add to cart</a>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                 <img src="/labs/lab3/img/kartinka_6-1-removebg-preview.png" alt="">
                 <h3>Kraken</h3>
                 <div class="content">
-                    <span>$25</span>
+                    <span>$19</span>
                     <a href="#">Add to cart</a>
                 </div>
             </div>
@@ -95,27 +95,22 @@
                 <img src="/labs/lab2/img/kartinka_9-1-removebg-preview.png" alt="">
                 <h3>Viper mini</h3>
                 <div class="content">
-                    <span>$25</span>
+                    <span>$13</span>
                     <a href="#">Add to cart</a>
                 </div>
             </div>
         </div>
     </section>
     <section class="cart" id="cart">
-        <div class="heading">
-            <article id="products"></article>
-            <h2>Shop</h2>
-        </div>
         <div class="table">
             <table class="cart_table" id="cart_table">
-                <thead>
-                    <tr>
-                        <th>Model</th>
-                        <th>Quantity</th>
-                        <th>Amount</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
+                <div class="layout-inline row th">
+                    <div class="col col-pro">Product</div>
+                    <div class="col col-price">
+                        Price
+                    </div>
+                    <div class="col">Total</div>
+                </div>
                 <tbody>
                     <tr>
                         <td>
@@ -126,17 +121,17 @@
                         </td>
                         <td>
                             <div class="btn_container">
-                                <button class="cart_qty_plus" type="button" value="+"><i
-                                        class='bx bx-plus'></i></button>
-                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
                                 <button class="cart_qty_minus" type="button" value="-"><i
                                         class='bx bx-minus'></i></button>
-                            </div>
+                                        <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                        <button class="cart_qty_plus " type="button" value="+"><i
+                                                class='bx bx-plus'></i></button>
+                                    </div>
                         </td>
                         <td>
-                            <input type="text" value="2590" class="price form_control" disabled>
+                            <input type="text" value="15" class="price form_control" disabled>
                         </td>
-                        <td align="right">$<span id="amount" class="amount">0</span></td>
+                        <td align="right"><span id="amount" class="amount">0</span>$</td>
                     </tr>
                     <tr>
                         <td>
@@ -147,17 +142,17 @@
                         </td>
                         <td>
                             <div class="btn_container">
-                                <button class="cart_qty_plus" type="button" value="+"><i
-                                        class='bx bx-plus'></i></button>
-                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
                                 <button class="cart_qty_minus" type="button" value="-"><i
                                         class='bx bx-minus'></i></button>
-                            </div>
+                                        <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                        <button class="cart_qty_plus" type="button" value="+"><i
+                                                class='bx bx-plus'></i></button>
+                                    </div>
+                                </td>
+                                <td>
+                            <input type="text" value="19" class="price form_control" disabled>
                         </td>
-                        <td>
-                            <input type="text" value="610" class="price form_control" disabled>
-                        </td>
-                        <td align="right">$<span id="amount" class="amount">0</span></td>
+                        <td align="right"><span id="amount" class="amount">0</span>$</td>
                     </tr>
                     <tr>
                         <td>
@@ -168,17 +163,17 @@
                         </td>
                         <td>
                             <div class="btn_container">
-                                <button class="cart_qty_plus" type="button" value="+"><i
-                                        class='bx bx-plus'></i></button>
+                                <button class="cart_qty_minus" type="button" value="-"><i class='bx bx-minus'></i></button>
                                 <input type="text" name="qty" min="0" class="qty form_control" value="0">
-                                <button class="cart_qty_minus" type="button" value="-"><i
-                                        class='bx bx-minus'></i></button>
+                                <button class="cart_qty_plus" type="button" value="+"><i
+                                class='bx bx-plus'></i></button>
+                                
                             </div>
                         </td>
                         <td>
-                            <input type="text" value="490" class="price form_control" disabled>
+                            <input type="text" value="25" class="price form_control" disabled>
                         </td>
-                        <td align="right">$<span id="amount" class="amount">0</span></td>
+                        <td align="right"><span id="amount" class="amount">0</span>$</td>
                     </tr>
                     <tr>
                         <td>
@@ -189,29 +184,30 @@
                         </td>
                         <td>
                             <div class="btn_container">
-                                <button class="cart_qty_plus" type="button" value="+"><i
-                                        class='bx bx-plus'></i></button>
-                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
                                 <button class="cart_qty_minus" type="button" value="-"><i
-                                        class='bx bx-minus'></i></button>
+                                         class='bx bx-minus'></i></button>
+                                
+                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                <button class="cart_qty_plus" type="button" value="+"><i class='bx bx-plus'></i></button>
+                                
                             </div>
                         </td>
                         <td>
-                            <input type="text" value="360" class="price form_control" disabled>
+                            <input type="text" value="13" class="price form_control" disabled>
                         </td>
-                        <td align="right">$<span id="amount" class="amount">0</span></td>
+                        <td align="right"><span id="amount" class="amount">0</span>$</td>
                     </tr>
                 </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="4"></td>
-                        <td align="right"><strong>TOTAL = $ <span id="total" class="total">0</span></strong></td>
-                    </tr>
-
-                </tfoot>
             </table>
+            <div class="tf">
+                <div class="row layout-inline">
+                    <div class="col">
+                        <td align="right"><strong>TOTAL = $ <span id="total" class="total">0</span></strong></td>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
         </div>
-    </section>
     <section class="footer">
         <div class="footer_box">
             <p>
@@ -249,7 +245,7 @@
             </div>
         </div>
     </section>
-    <div class="copyright">
+    <div>
         <p>
             &#169; All Rights
         </p>
