@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spat</title>
+    <link rel="stylesheet" href="/labs/lab4/css/css.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <a href="#" class="logo ">
+            <img src="/labs/lab4/img/kartinka_3-1-removebg-preview.png" alt="">
+        </a>
+        <!-- menu -->
+        <i class='bx bx-menu' id="menu_icon"></i>
+        <!-- links -->
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#customers">Customers</a></li>
+        </ul>
+        <!-- icon -->
+        <div class="header_icon">
+            <i class='bx bxs-cart'></i>
+            <i class='bx bxs-search' id="search_icon"></i>
+        </div>
+        <!-- search -->
+        <div class="search_box">
+            <input type="search" name="" id="" placeholder="Search here...">
+        </div>
+    </header>
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="home_text">
+            <h1>Start your day <br> with spalnik</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, odit.</p>
+            <a href="#products" class="btn">Shop now</a>
+        </div>
+        <div class="home_img">
+            <img src="/labs/lab4/img/1524617_original-removebg-preview (2).png" alt="">
+        </div>
+    </section>
+    <!-- about -->
+    <section class="about" id="about">
+        <div class="about_img">
+            <img src="/labs/lab4/img/1_1860h368.jpg" alt="">
+        </div>
+        <div class="about_text">
+            <h2>our history</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur beatae ad corporis vel, laborum
+                impedit sed voluptatem quod quibusdam quasi dolor doloribus omnis ipsum officia</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+        <div class="heading">
+            <h2>Our popular products</h2>
+        </div>
+        <!-- container -->
+        <div class="products_container">
+            <div class="box">
+                <img src="/labs/lab4/img/photo1.jpg" alt="">
+                <h3>Razer</h3>
+                <div class="content">
+                    <span>$15</span>
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/labs/lab4/img/kartinka_6-1-removebg-preview.png" alt="">
+                <h3>Kraken</h3>
+                <div class="content">
+                    <span>$19</span>
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/labs/lab4/img/84d45922fb0dca6fd95e7a87b248da28.jpg" alt="">
+                <h3>Viper</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="/labs/lab4/img/kartinka_9-1-removebg-preview.png" alt="">
+                <h3>Viper mini</h3>
+                <div class="content">
+                    <span>$13</span>
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cart" id="cart">
+        <div class="table">
+            <table class="cart_table" id="cart_table">
+                <div class="layout-inline row th">
+                    <div class="col col-pro">Product</div>
+                    <div class="col col-price">
+                        Price
+                    </div>
+                    <div class="col">Total</div>
+                </div>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="model_img"><img width="20%" src="/labs/lab4/img/photo1.jpg"></div>
+                        </td>
+                        <td>
+                            <p>Razer</p>
+                        </td>
+                        <td>
+                            <div class="btn_container">
+                                <button class="cart_qty_minus" type="button" value="-"><i
+                                        class='bx bx-minus'></i></button>
+                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                <button class="cart_qty_plus " type="button" value="+"><i
+                                        class='bx bx-plus'></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" value="15" class="price form_control" disabled>
+                        </td>
+                        <td align="right"><span id="amount" class="amount">0</span>$</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="model_img"><img src="/labs/lab4/img/kartinka_6-1-removebg-preview.png"></div>
+                        </td>
+                        <td>
+                            <p>Kraken</p>
+                        </td>
+                        <td>
+                            <div class="btn_container">
+                                <button class="cart_qty_minus" type="button" value="-"><i
+                                        class='bx bx-minus'></i></button>
+                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                <button class="cart_qty_plus" type="button" value="+"><i
+                                        class='bx bx-plus'></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" value="19" class="price form_control" disabled>
+                        </td>
+                        <td align="right"><span id="amount" class="amount">0</span>$</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="model_img"><img src="/labs/lab4/img/84d45922fb0dca6fd95e7a87b248da28.jpg"></div>
+                        </td>
+                        <td>
+                            <p>Viper</p>
+                        </td>
+                        <td>
+                            <div class="btn_container">
+                                <button class="cart_qty_minus" type="button" value="-"><i
+                                        class='bx bx-minus'></i></button>
+                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                <button class="cart_qty_plus" type="button" value="+"><i
+                                        class='bx bx-plus'></i></button>
+
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" value="25" class="price form_control" disabled>
+                        </td>
+                        <td align="right"><span id="amount" class="amount">0</span>$</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="model_img_extra"><img src="/labs/lab4/img/kartinka_9-1-removebg-preview.png">
+                            </div>
+                        </td>
+                        <td>
+                            <p>Viper mini</p>
+                        </td>
+                        <td>
+                            <div class="btn_container">
+                                <button class="cart_qty_minus" type="button" value="-"><i
+                                        class='bx bx-minus'></i></button>
+
+                                <input type="text" name="qty" min="0" class="qty form_control" value="0">
+                                <button class="cart_qty_plus" type="button" value="+"><i
+                                        class='bx bx-plus'></i></button>
+
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" value="13" class="price form_control" disabled>
+                        </td>
+                        <td align="right"><span id="amount" class="amount">0</span>$</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="tf">
+                <div class="row layout-inline">
+                    <div class="col">
+                        <td align="right"><strong>TOTAL = $ <span id="total" class="total">0</span></strong></td>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="coments">
+        <div class="heading">
+            <h2>Coments</h2>
+        </div>
+        <div class="coments">
+
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer_box">
+            <p>
+                If you want to find us on media and to join our community, you can use
+                these platforms
+            </p>
+            <article id="customers"></article>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+            </div>
+        </div>
+        <div class="footer_box">
+            <h2>Support</h2>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+        </div>
+        <div class="footer_box">
+            <h2>View Guides</h2>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog Posts</a></li>
+            <li><a href="#">Our Branches</a></li>
+        </div>
+        <div class="footer_box">
+            <h3>Contact</h3>
+            <div class="contact">
+                <span><i class='bx bxs-map'></i>Ukraine</span>
+                <span><i class='bx bxs-phone'></i>+380675042388</span>
+                <span><i class='bx bxs-envelope'></i>sabaka@ukr.net</span>
+            </div>
+        </div>
+    </section>
+    <div>
+        <p>
+            &#169; All Rights
+        </p>
+    </div>
+    <!-- js url -->
+    <script src="/labs/lab4/js/main.js"></script>
+</body>
+
+</html>
