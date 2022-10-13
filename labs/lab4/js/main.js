@@ -81,15 +81,12 @@ var decrementQty = minusBtn.click(function () {
 async function addCustomer(title, body, imgScr) {
   let customer = document.createElement("div");
   let CustomersContainer = document.querySelector(".coments");
-
   let CustomersContent = `
-    
     <div class="box">
-           <h3> ${title} </h3>
-        <div>
-            <img src="${imgScr}" alt="">
-            <p>${body}</p>
-        </div>  
+      <div>
+        <img src="${imgScr}" alt="">
+        <p>${body}</p>
+      </div>
     </div>`;
   customer.innerHTML = CustomersContent;
   CustomersContainer.append(customer);
@@ -106,3 +103,14 @@ async function parse(data) {
     await addCustomer(title, body, imgScr);
   }
 }
+
+
+fetch('https://api.openweathermap.org/data/2.5/weather?id=703448&appid=e69c59f8cb1cb459f0df0479405abcd6')
+.then(res => res.json())
+.then(function(data){
+    document.querySelector('.w_name').textContent = data.name;
+    document.querySelector('.w_degree').innerHTML = Math.round(data.main.temp - 273) + '&deg;';
+    document.querySelector('.w_disc').textContent = data.weather[0]['description'];
+    document.querySelector('.w_img').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png">`;
+})
+.catch(function(){ });
