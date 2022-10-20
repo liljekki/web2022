@@ -103,3 +103,17 @@ footer{
         font-size: 1.3rem;
     }
 }
+
+@media(max-width: 1300px){
+    .about{
+        flex-wrap: wrap;
+    }
+    .about {
+    padding: 100px;
+    }
+    .about-img{
+        img{
+            padding: 10px;
+        }
+    }
+}
