@@ -1,0 +1,46 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "451 Fahrenheit",
+      "pages": "369",
+      "img_link": "./img/book 1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "1984",
+      "pages": "257",
+      "img_link": "./img/book 2.jpg"
+    },    
+    {
+      "id": 3,
+      "name": "The Master and Margarita",
+      "pages": "306",
+      "img_link": "./img/book 3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Shantaram",
+      "pages": "201",
+      "img_link": "./img/book 4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Flowers for Algernon",
+      "pages": "116",
+      "img_link": "./img/book 5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "The Picture of Dorian Grey",
+      "pages": "99",
+      "img_link": "./img/book 6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "The little Prince",
+      "pages": "101",
+      "img_link": "./img/book 7.jpg"
+    }
+  ]
+}
