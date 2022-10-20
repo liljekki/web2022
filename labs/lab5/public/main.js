@@ -10,25 +10,25 @@
 //   navbar.classList.remove("active");
 // };
 
-//adding tea
+//adding
 
-async function addTea(id, name_b, pages, img) {
-  let tea = document.createElement("div");
-  tea.className = "box";
-  let teaContainer = document.querySelector(".items-container");
+async function add(id, name_b, pages, img) {
+  let gg = document.createElement("div");
+  gg.className = "box";
+  let Container = document.querySelector(".items-container");
 
-  let teadiv = `
-        <img src="${img}" alt="" class="i-image">
-        <h3 class="i-title">${id}. ${name_b}</h3>
+  let div_n = `
+        <img src="${img}" alt="" class="img">
+        <h3 class="name_text">${id}. ${name_b}</h3>
         <div class="content">
             <span>Кількість сторінок:</span>
             <p class="i-type">${pages}</p>
         </div>`;
-  tea.innerHTML = teadiv;
-  teaContainer.append(tea);
+  gg.innerHTML = div_n;
+  Container.append(gg);
 }
 
-async function getTeaData() {
+async function get() {
   fetch("http://localhost:3001/books")
     .then((res) => {
       return res.text();
@@ -41,8 +41,8 @@ async function getTeaData() {
         page = `${el.pages}`;
         img = `${el.img_link}`;
 
-        addTea(id, name_b, page, img);
+        add(id, name_b, page, img);
       });
     });
 }
-getTeaData();
+get();

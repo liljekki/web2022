@@ -31,16 +31,16 @@
       "img_link": "./img/book 5.jpg"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "The Picture of Dorian Grey",
       "pages": "99",
       "img_link": "./img/book 6.jpg"
     },
     {
-      "id": 6,
+      "id": 7,
       "name": "The little Prince",
       "pages": "101",
-      "img_link": "./img/book 1.jpg"
+      "img_link": "./img/book 7.jpg"
     }
   ]
 }
